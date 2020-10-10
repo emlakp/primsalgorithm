@@ -6,7 +6,6 @@
 
 int main()
 {
-    // Idea is to implement the adjacency list as an array of vectors:
     int n;
     std::cin >> n;
     std::vector<std::pair<double, double>> coordinates (n);
