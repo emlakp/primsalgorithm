@@ -5,6 +5,7 @@
 #include <queue>
 #include <functional>
 #include <iostream>
+#include <iomanip>
 
 void Graph::addNewEdge(int u, double weight, int v)
 {
@@ -67,7 +68,7 @@ void Graph::primsAlgorithm()
             }
         }
     }
-    std::cout << minimalCost << std::endl;
+    std::cout << std::setprecision(9) <<minimalCost << std::endl;
     for (size_t i = 0; i < MST.size(); ++i)
     {
 
@@ -75,6 +76,8 @@ void Graph::primsAlgorithm()
             MST[i].second.first << ' ' << MST[i].second.second << std::endl;
     }
 }
+
+
 
 
 
